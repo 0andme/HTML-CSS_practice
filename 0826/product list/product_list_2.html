@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>productlist2</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .productlist {
+      width: 720px;
+      padding:10px;
+      border: 1px solid black;
+      overflow: hidden;
+
+    }
+
+    productlist::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .productlist li {
+      
+      float: left;
+      position: relative;
+      width: 200px;
+      height: 250px;
+      margin: 10px;
+      padding: 10px;
+      background-color: gray;
+
+   }
+   
+    
+
+    .productlist li img {
+      vertical-align: top;
+      /* display: block; */
+      /* margin-bottom: 60px; */
+
+    }
+
+    .productlist li p {
+      color: red;
+      background-color: blanchedalmond;
+      position: absolute; 
+      left:10px;
+      bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="productlist">
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+    <li class="card">
+      <img src="http://placehold.it/200x150" alt="사진">
+      <p>이름입니다</p>
+    </li>
+  </ul>
+
+</body>
+
+</html>

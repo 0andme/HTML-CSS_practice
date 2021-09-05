@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float2</title>
+  <link rel="stylesheet" href="../reset.css ">
+  <style>
+    body {
+      padding: 40px;
+    }
+
+    .grandmom {
+      border: 1px solid black;
+      padding: 20px;
+      /* overflow: hidden; */
+      width: 670px;
+    }
+
+    .mother {
+      /* overflow: hidden;  */
+      /* display: inline-block; */
+      /* float: left; */
+      /* position: absolute; */
+      /* display: table-cell; */
+      /* display: flex; */
+      width: 270px;
+      padding: 20px;
+      border: 2px solid lime;
+      /* overflow: hidden;
+      float: left; */
+
+    }
+
+    .mother.right {
+      float: right;
+    }
+
+    .mother.left {
+      float: left;
+    }
+
+    .mother .photo {
+      width: 100px;
+      height: 100px;
+      border: 2px solid lime;
+      float: left;
+      margin-right: 10px;
+
+    }
+
+    .mother>p {
+      border: 1px solid rgb(107, 55, 55);
+    }
+
+    /* .fix::after{
+      content: "";
+      clear: both;
+      display: block;
+    } */
+    .bottom {
+      border: 2px solid black;
+      clear: both;
+      padding: 10px;
+      margin-top: 20xp;
+    }
+  </style>
+</head>
+ 
+<body>
+  <div class="grandmom">
+    <div class="mother  left">
+      <div class="photo"></div>
+      <p>LEFT. HTML은 선형적(linearity)입니다.</p>
+    </div>
+    <div class="mother  right">
+      <div class="photo"></div>
+      <p>LEFT. HTML은 선형적(linearity)입니다.</p>
+    </div>
+    <div class="bottom">LEFT. HTML은 선형적(linearity)입니다.</div>
+  </div>
+
+
+
+</body>
+
+</html>
