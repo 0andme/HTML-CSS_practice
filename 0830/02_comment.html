@@ -1,0 +1,109 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Wired</title>
+<link rel="stylesheet" href="../reset.css" type="text/css"/>
+<style type="text/css">
+
+body {padding:40px;}
+.mother {
+	/* overflow: hidden;  */
+	/* display: inline-block; */
+	/* float: left; */
+	/* position: absolute; */
+	/* display: table-cell; */
+	/* display: flex; */
+	position: relative;
+	border:2px solid lime; 
+	width:270px; 
+	padding:20px;
+	margin-bottom:20px;
+	z-index: 50;
+}
+.mother.left {float:left}
+.mother.right {float:right}
+.mother > .photo {
+	width:100px; 
+	height:100px; 
+	border:10px solid red; 
+	float:left; 
+}
+.mother > p {
+	border:1px solid rgb(107, 55, 55);
+}
+/* .fix::after {
+	content:'';
+	border:1px solid blue;
+	clear:left;
+	display:block;
+} */
+.grandmom {
+	border:2px solid black;
+	padding:20px;
+	width:670px;
+	margin-top:50px;
+}
+.bottom {
+	border:2px solid black;
+	clear:both;
+	padding:10px;
+}
+header {
+	background-color: black;
+	color:white;
+	position: fixed;
+	/* width:80px; */
+	top:auto;
+	left:0;
+	right:0;
+	bottom:0;
+	height:50px;
+	z-index: 100;
+}
+
+.comment {
+	border:1px solid red;
+	position: absolute;
+	top:-10px;
+	left:auto;
+	right:-10px;
+	bottom:auto;
+}
+.comment > img {width:25px;}
+
+	</style>
+</head>
+
+<body>
+	<header>상단메뉴</header>
+	<div class="grandmom">
+		<div class="mother fix left">
+			<div class="photo"></div>
+			<p>LEFT. HTML은 선형적(linearity)입니다.LEFT. HTML은 선형적(linearity)입니다.</p>
+			<a href="" class="comment">
+				<img src="./icon_info.png" alt="댓글" />
+			</a>
+		</div>
+		<div class="mother fix right">
+			<div class="photo"></div>
+			<p>LEFT. HTML은 선형적(linearity)입니다.</p>
+			<a href="" class="comment">
+				<img src="./icon_info.png" alt="댓글" />
+			</a>
+		</div>
+		<div class="bottom">LEFT. HTML은 선형적(linearity)입니다.</div>
+	</div>
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	</body>
+
+</html>

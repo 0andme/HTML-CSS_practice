@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Wired</title>
+<link rel="stylesheet" href="../reset.css" type="text/css"/>
+<style type="text/css">
+
+body {padding:40px;}
+.mother {
+	/* overflow: hidden;  */
+	/* display: inline-block; */
+	/* float: left; */
+	/* position: absolute; */
+	/* display: table-cell; */
+	/* display: flex; */
+	border:2px solid lime; 
+	width:270px; 
+	padding:20px;
+	margin-bottom:20px;
+}
+.mother.left {float:left}
+.mother.right {float:right}
+.mother > .photo {
+	width:100px; 
+	height:100px; 
+	border:10px solid lime; 
+	float:left; 
+	margin-right:20px;
+	position: relative;
+}
+.mother > p {
+	border:1px solid rgb(107, 55, 55);
+}
+.fix::after {
+	content:'';
+	border:1px solid blue;
+	clear:left;
+	display:block;
+}
+.grandmom {
+	border:2px solid black;
+	padding:20px;
+	width:670px;
+}
+.bottom {
+	border:2px solid black;
+	clear:both;
+	padding:10px;
+}
+</style>
+</head>
+
+<body>
+<div class="grandmom">
+	<div class="mother fix left">
+		<div class="photo"></div>
+		<p>LEFT. HTML은 선형적(linearity)입니다.</p>
+	</div>
+	<div class="mother fix right">
+		<div class="photo"></div>
+		<p>LEFT. HTML은 선형적(linearity)입니다.</p>
+	</div>
+	<div class="bottom">LEFT. HTML은 선형적(linearity)입니다.</div>
+</div>
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+</body>
+</html>
