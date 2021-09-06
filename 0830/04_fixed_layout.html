@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04_fixed_layout</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    body{padding: 20px;}
+    .wrap {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    header {
+      position: absolute;
+      /* top: 0; */
+      bottom: auto;
+      right: 0;
+      left: 0;
+      background-color: black;
+      height: 100px;
+      /* z-index: 10; */
+    }
+
+    main {
+      position: absolute;
+      top: 100px;
+      bottom: 50px;
+      left: 0;
+      right: 0;
+      /* background-color: yellow; */
+
+    }
+
+    main .left {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: auto;
+      left: 0;
+      width: 150px;
+      background-color: yellowgreen;
+    }
+
+    main .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 150px;
+      background-color: red;
+      overflow-y: scroll;
+    }
+
+    
+     footer {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 50px;
+      background-color: gray;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header></header>
+    <main>
+      <div class="left"></div>
+      <div class="content">
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+      </div>
+    </main>
+    <footer></footer>
+  </div>
+
+
+</body>
+
+</html>
